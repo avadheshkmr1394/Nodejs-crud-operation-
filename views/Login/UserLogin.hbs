@@ -1,0 +1,30 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/login" method="POST" autocomplete="off">
+    <div class="row">
+        <div class="col-md-6">
+            <label>User Name</label>
+            <input type="text" class="form-control" value="" name="userName" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label>Password</label>
+            <input type="password" class="form-control" value="" name="password" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="text-danger col-md-6">
+            {{error}}
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-4">
+            <a href="/employee" class="btn btn-primary">User Registration</a>
+        </div>
+        <div class="col-md-2">
+            <input type="submit" class="form-control" value="Login" />
+        </div>
+    </div>
+</form>
